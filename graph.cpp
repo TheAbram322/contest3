@@ -8,8 +8,8 @@ unsigned Graph::getNumberOfEdges() const{
     return numberOfEdges;
 }
 
-Edge* Graph::getEdgeAtIndex(int index){
-    return &(edges[index]);
+Edge Graph::getEdgeAtIndex(int index) const{
+    return edges[index];
 }
 
 void Graph::addEdge(int from, int to, int weight){

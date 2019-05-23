@@ -15,7 +15,7 @@ public:
     Graph(unsigned n, unsigned m): numberOfVertices(n), numberOfEdges(m){}
     unsigned getNumberOfVertices() const;
     unsigned getNumberOfEdges() const;
-    Edge* getEdgeAtIndex(int index);
+    Edge getEdgeAtIndex(int index) const;
     void addEdge(int from, int to, int weight);
 
 private:
